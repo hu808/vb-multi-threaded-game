@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CB25D88-5E4F-490B-B995-BCA2556A778B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>期末.My.MyApplication</StartupObject>
+    <RootNamespace>期末</RootNamespace>
+    <AssemblyName>期末</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>期末.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>期末.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bad.Designer.vb">
+      <DependentUpon>bad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bad.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="du.Designer.vb">
+      <DependentUpon>du.vb</DependentUpon>
+    </Compile>
+    <Compile Include="du.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="explain.Designer.vb">
+      <DependentUpon>explain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="explain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="choice.Designer.vb">
+      <DependentUpon>choice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="choice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="run.Designer.vb">
+      <DependentUpon>run.vb</DependentUpon>
+    </Compile>
+    <Compile Include="run.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setset.Designer.vb">
+      <DependentUpon>setset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="setset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="bad.resx">
+      <DependentUpon>bad.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choice.resx">
+      <DependentUpon>choice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="du.resx">
+      <DependentUpon>du.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="explain.resx">
+      <DependentUpon>explain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="run.resx">
+      <DependentUpon>run.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setset.resx">
+      <DependentUpon>setset.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse_0019.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horse_0020.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\遊戲背景_191224_0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\遊戲背景_191224_0002.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\擷取.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\遊戲背景_191224_0003.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\遊戲背景_191224_0004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gudone.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8ybfg-39qbp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\貝殼項鍊_191228_0001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\海斗.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\凱特.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\貝殼.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\選公主.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\選公主黑白.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\粉 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\深藍 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\紫 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\黃 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\綠 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\橘 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\藍 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice粉 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice深藍 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice紫 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice黃 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice綠 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice橘 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice藍 去背.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\更衣間.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\簾子.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\海面.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 粉1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 粉2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 紫1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 紫2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 綠1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 綠2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 藍1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 藍2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\說明1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\說明2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\說明3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\說明4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\說明5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 深藍1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 深藍2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 橘1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 橘2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 黃1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\游泳 黃2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KODOU.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\書.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\爆炸.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派一 不動.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派一 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派一 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派二 不動.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派二 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派二 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\白.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 粉.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 深藍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 紫.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 綠.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 橘.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 藍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 黃.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\變身 黃.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派三 不動.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派五 不動.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\反派四 不動.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派三 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派三 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派五 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派五 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派四 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\攻擊 反派四 2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
